@@ -1,9 +1,6 @@
-// main.js
 
-// SVG dimension variables
 var w = 900, h = 500;
 
-// container block
 var container = d3.select("body")
     .append("svg")
     .attr("width", w)
@@ -11,16 +8,13 @@ var container = d3.select("body")
     .attr("class", "container")
     .style("background-color", "rgba(0,0,0,0.2)");
 
-// innerRect block
+
 var innerRect = container.append("rect")
     .datum(400)
     .attr("width", 800)
     .attr("height", 400);
 
-// Code to append circles based on data (dataArray)
-// Your previous code...
 
-// Code to append circles based on data (dataArray)
 var dataArray = [10, 20, 30, 40, 50];
 
 var circlesFromArray = container.selectAll(".circlesFromArray")
@@ -38,7 +32,6 @@ var circlesFromArray = container.selectAll(".circlesFromArray")
         return 450 - (d * 5);
     });
 
-// Code to append circles based on city population (cityPop)
 var cityPop = [
     { 
         city: 'Madison',
